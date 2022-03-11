@@ -1,19 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Prints number 0 to 9 with comma.
- *
- * Return: Always 0 (Success)
- */
+* main - print single digit numbers
+*
+* Description: print single digit numbers with commas
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	char num[20] = "0,1,2,3,4,5,6,7,8,9";
 	int i;
 
-	for (i = 0; i < 20; i++)
+	i = 48;
+
+	while (i < 58)
 	{
-		putchar(num[i]);
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		i++;
 	}
-	putchar('\n');
+
+	putchar(10);
+
 	return (0);
 }
