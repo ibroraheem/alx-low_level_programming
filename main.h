@@ -1,14 +1,17 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
-/**
- * _isdigit - check for a digit
- * @c : character to check
- * Return:0 or 1
- */
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+void print_numbers(void);
+int _putchar(char c);
+void print_most_numbers(void);
+void more_numbers(void);
+void print_line(int n);
+void print_diagonal(int n);
+void print_square(int size);
+void print_triangle(int size);
+void print_number(int n);
 
-int _isdigit(int c)
-{
-	return (c >= 48 && c <= 57);
-
-}
+#endif
