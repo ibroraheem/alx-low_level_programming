@@ -5,6 +5,7 @@
  * @b: size of memory to allocate
  * Return: Pointer to the address
 */
+
 void *malloc_checked(unsigned int b)
 {
 	int *p = malloc(b);
